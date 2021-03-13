@@ -1,0 +1,13 @@
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+resources:
+  - ../deployment.yaml
+  - ../example-app.yaml
+  - ../configmaps/configmap.yaml
+  - ../deployments/deployment.yaml
+  - ../namespaces/example-app.yaml
+  - ../secrets/secret.yaml
+  - ../services/service.yaml
+commonLabels:
+  owner: hongqi
+
